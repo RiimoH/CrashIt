@@ -1,20 +1,10 @@
-[gd_scene load_steps=3 format=2]
-
-[ext_resource path="res://assets/floor1.png" type="Texture" id=2]
+[gd_scene load_steps=2 format=2]
 
 [sub_resource type="RectangleShape2D" id=2]
-extents = Vector2( 384, 28 )
+extents = Vector2( 10936, 28 )
 
 [node name="Floor" type="StaticBody2D"]
-__meta__ = {
-"_edit_group_": true
-}
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( 384, 36 )
+position = Vector2( 10936, 36 )
 shape = SubResource( 2 )
-
-[node name="Sprite" type="Sprite" parent="."]
-scale = Vector2( 1.15173, 0.789695 )
-texture = ExtResource( 2 )
-centered = false
